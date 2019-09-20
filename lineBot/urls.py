@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
-from lineBotAPP.views import sayHello
+from lineBotAPP.views import callback
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^hello/(\w+)$', sayHello),
+    url('^callback', callback),
 ]
