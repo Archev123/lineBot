@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Sep 20 21:50:14 2019
+Created on Thu Sep 20 21:50:14 2019
 
 @author: Deforest
 """
@@ -24,7 +24,7 @@ class assistantTranslator:
         
     def startTranslate(self):
         if self.toLang == "None":
-            return TextSendMessage("Do not supply this language now, please try again or type @使用說明 to understand usage")
+            return TextSendMessage("Do not support this language now, please try again or type @使用說明 to understand usage")
         else:
             translator = Translator(from_lang='zh-Hant', to_lang=self.toLang)
             translation = translator.translate(self.oriText)
