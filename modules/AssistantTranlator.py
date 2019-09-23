@@ -10,7 +10,7 @@ from linebot.models import TextSendMessage, AudioSendMessage
 
 class assistantTranslator:
     
-    langSet={"@英文": "en", "@韓文": "ko", "@中文": "zh-Hant"}
+    langSet={"@英文": "en", "@韓文": "ko", "@中文": "zh-Hant", "@日文": "ja"}
     
     def __init__(self, toLang='', oriText=''):
         self.toLang = toLang
